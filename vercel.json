@@ -1,15 +1,14 @@
-  {
-  "version": 2,
-  "builds": [
+ {
+"version": 2,
+"builds": [
     {
-      "src": "./pyy.py",
-      "use": "@vercel/node"
+        "src": "pyy.py",
+        "use": "@vercel/python"
     }
-  ],
-  "routes": [
+],
+"routes": [
     {
-      "src": "/(.*)",
-      "destination": "/"
+        "src": "(.*)",
+        "dest": "pyy.py"
     }
-  ]
-}
+]}
